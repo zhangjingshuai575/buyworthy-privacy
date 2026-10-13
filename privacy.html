@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BuyWorthy — Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    background: #f8fafc;
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(180deg, #1d4ed8, #0f172a);
+    color: #fff;
+    padding: 56px 24px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 8px; font-size: 2.1rem; letter-spacing: -0.5px; }
+  header p { margin: 0; opacity: .85; font-size: 1rem; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 72px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2.2em;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: .4em;
+  }
+  p, li { color: #334155; }
+  ul { padding-left: 1.3em; }
+  code {
+    background: #eef2ff;
+    color: #1d4ed8;
+    padding: .1em .4em;
+    border-radius: 5px;
+    font-size: .92em;
+  }
+  .badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: .85em;
+    margin-left: 8px;
+  }
+  footer {
+    text-align: center;
+    color: #64748b;
+    font-size: .85em;
+    padding: 24px;
+    border-top: 1px solid #e2e8f0;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>BuyWorthy — Privacy Policy</h1>
+  <p>Effective date: <span id="date"></span></p>
+</header>
+
+<main>
+  <p>BuyWorthy is a browser extension that analyzes product pages on supported shopping sites and gives you a clear &ldquo;worth buying&rdquo; score. This policy explains what data, if any, the extension handles, and how. <strong>The short version: everything runs locally in your own browser — nothing is collected, uploaded, or stored about you.</strong></p>
+
+  <h2>1. What BuyWorthy does</h2>
+  <p>When you open a product page on a supported site (for example Amazon or JD.com) and start an analysis, the extension reads the <em>visible text of that page</em> — such as the product name, price, and customer reviews — and computes a score and a few plain-language reasons.</p>
+
+  <h2>2. Data we do NOT collect</h2>
+  <ul>
+    <li><strong>No personal information</strong> — we do not read or collect your name, email, address, account, or identity.</li>
+    <li><strong>No browsing history</strong> — we do not track which pages you visit or build a history of your activity.</li>
+    <li><strong>No uploads</strong> — no data is sent to us. BuyWorthy has <em>no server, no analytics, and no tracking</em>.</li>
+    <li><strong>No third-party sharing</strong> — because nothing is collected, nothing is sold, shared, or transferred to any third party.</li>
+  </ul>
+
+  <h2>3. How the analysis happens</h2>
+  <p>All processing happens <strong>entirely inside your own browser</strong>, on your device. The page text is read in memory only, the score is computed locally, and the result is shown to you in a side panel. The moment you close the page, none of that information persists.</p>
+
+  <h2>4. Local storage</h2>
+  <p>The extension uses the browser&rsquo;s <code>storage</code> permission only for small, non-personal convenience settings (if any) — for example a remembered preference. This data lives only in your browser&rsquo;s local extension storage and never leaves your device. Removing the extension deletes it.</p>
+
+  <h2>5. Permissions, explained</h2>
+  <ul>
+    <li><code>activeTab</code> — lets the extension read the current page <em>only when you click the button</em>, so it can analyze the product you asked about.</li>
+    <li><code>storage</code> — used for the small local preferences described above.</li>
+    <li>Site access (<code>amazon.com</code>, <code>jd.com</code>) — limited to the shopping sites this tool is designed to work on.</li>
+  </ul>
+
+  <h2>6. Children&rsquo;s privacy</h2>
+  <p>BuyWorthy is not directed to children and does not knowingly collect information from anyone.</p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>If this policy ever changes, the updated version will be posted at the same URL with a new effective date.</p>
+
+  <h2>8. Contact</h2>
+  <p>Questions about privacy can be sent through the support contact listed on the extension&rsquo;s Chrome Web Store listing.</p>
+</main>
+
+<footer>
+  BuyWorthy &middot; Local-first, no data leaves your device.
+</footer>
+
+<script>
+  // Auto-fill today's date so the "effective date" stays current.
+  document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric'
+  });
+</script>
+</body>
+</html>
